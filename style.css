@@ -1,0 +1,145 @@
+
+
+@font-face {
+    font-family: booked;
+    src: url(fonts/booked/Booked.ttf);
+}
+
+@font-face {
+    font-family: strongyoung;
+    src: url(fonts/StrongYoung/Strong\ Young.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.header {
+    /* background-color: #615b5b; */
+    background-image: url(https://img.freepik.com/fotos-gratis/renderizacao-3d-do-interior-de-uma-sala-de-grunge-com-uma-atmosfera-nebulosa_1048-14608.jpg?t=st=1729273922~exp=1729277522~hmac=1d26dd38c70f6362678e8851820e19416e5a2318962bfb947522893ec3dd0b8f&w=740);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    color: #f6a832;
+    text-align: center;
+    padding: 30px, 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header h1 {
+    font-size: 6em;
+    font-family: booked;
+}
+
+.header p {
+    font-size: 3em;
+    font-family: strongyoung;
+}
+
+.principal{
+    display: flex;
+    /* background-color: #000000; */
+}
+
+.content{
+    display: flex;
+    justify-content: end;
+    width: 100%;  
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 20px;
+    background-color: #000000;
+    width: 100%;
+}
+
+.box {
+    background-color: #cccccc00;
+    color: white;
+    padding: 30px;
+    width: 60%;
+    margin: 10px;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.box p::selection {
+    background-color: #000000;
+    color: #ffa600;
+}
+
+.box h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.box h3{
+    text-align: center;
+}
+ 
+.footer {
+    background-color: #000000;
+    color: #f6a832;
+    text-align: center;
+    padding: 20px;
+}
+
+.parallax1 {
+    background-image: url(https://img.freepik.com/fotos-gratis/boxer-com-luvas-pretas-close-up-de-treinamento_23-2148416712.jpg?t=st=1729194432~exp=1729198032~hmac=b642413b774ac7d019bd7b9a98ddacd07be277fef773a67a017311580ff47cac&w=900);
+    background-size: 50% 100%;
+}
+
+.parallax2 {
+    background-image: url(https://img.freepik.com/fotos-gratis/boxer-de-vista-lateral-dando-um-tempo-de-treinamento_23-2148416714.jpg?t=st=1729194438~exp=1729198038~hmac=d6b2a2a9ecbd7829bb315ca3ae6c11dc674131658ba7a19443f6b47ee4ca7faa&w=740);
+    background-size: 50% 100%;
+
+}
+
+.parallax3 {
+    background-image: url(https://img.freepik.com/fotos-gratis/boxer-jovem-treinando-na-academia_1303-18895.jpg?t=st=1729195482~exp=1729199082~hmac=fc85afcfc885389204c0e5bd488be0f5ecf70d2f4ef160008e258fb6779b2a97&w=900);
+    background-size: 50% 100%;
+
+}
+
+.parallax {
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;   
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    background-position: left;
+    background-color: #d80e0e;
+
+}
+
+@media(max-width:1280px){
+    .box {
+        background-color: #cccccc00;
+        color: white;
+        padding: 30px;
+        width: 60%;
+        margin: 10px;
+        text-align: justify;
+        font-size: 1rem;
+    }
+    
+}
+
